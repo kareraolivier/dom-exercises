@@ -1,0 +1,87 @@
+<!-- Create an HTML file and JS file. Inside the HTML file add three inputs for name, email and phone_number, and a button.
+When a user clicks on the button all the values of the inputs are displayed on the page -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="m-auto p-10">
+    <h1 class="text-green-700 my-10 text-2xl font-bold">Question 1</h1>
+    <div>
+        <form action="" method="post" class="max-w-md mx-auto mt-10">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                <input type="text" name="name" placeholder="name" id="name"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <input type="text" name="email" placeholder="email" id="email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone:</label>
+                <input type="text" name="phone" placeholder="phone" id="phone"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <button type="submit" id="submitBtn"
+                class="px-4 py-2 rounded bg-green-600 shadow-lg text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50">Submit</button>
+        </form>
+        <div id="display"></div>
+    </div>
+    <h1 class="text-green-700 my-10 text-2xl font-bold">Question 2</h1>
+    <div class="max-w-md mx-auto mt-10 flex justify-center">
+        <button id="changeColorBtn" class="px-4 py-2 rounded bg-green-600 shadow-lg text-white">change bg</button>
+    </div>
+    <h1 class="text-green-700 my-10 text-2xl font-bold">Question 3</h1>
+    <div class="flex flex-col items-center gap-4">
+        <p id="targetElement">This is the target element.</p>
+        <button id="toggleVisibilityBtn" class="px-4 py-2 rounded bg-green-600 shadow-lg text-white">Toggle
+            Visibility</button>
+        <button id="increaseFontSizeBtn" class="px-4 py-2 rounded bg-green-600 shadow-lg text-white">Increase Font
+            Size</button>
+    </div>
+    <h1 class="text-green-700 my-10 text-2xl font-bold">Question 4</h1>
+    <div class="max-w-md mx-auto mt-10 flex justify-center flex-col items-center">
+        <button id="addParagraphBtn" class="px-4 py-2 rounded bg-green-600 shadow-lg text-white">Add Paragraph</button>
+        <div id="paragraphContainer"></div>
+    </div>
+
+    <h1 class="text-green-700 my-10 text-2xl font-bold">Question 4</h1>
+    <div class=" mt-10 flex flex-col items-center justify-center">
+        <h1>Compare Two Numbers</h1>
+        <div class=" bg-white rounded-xl shadow-md overflow-hidden m-5">
+            <div class="md:flex">
+                <div class="p-8">
+                    <form id="numberForm">
+                        <div class="mb-4">
+                            <label for="number1" class="block text-gray-700 text-sm font-bold mb-2">Number 1:</label>
+                            <input type="number" id="number1" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="mb-4">
+                            <label for="number2" class="block text-gray-700 text-sm font-bold mb-2">Number 2:</label>
+                            <input type="number" id="number2" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button type="button" onclick="compareNumbers()"
+                                class="px-4 py-2 rounded bg-green-600 shadow-lg text-white">
+                                Compare
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p id="result" class="mt-5 text-lg font-bold"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
